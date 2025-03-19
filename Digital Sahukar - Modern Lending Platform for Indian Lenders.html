@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Transform your traditional lending business with Digital Sahukar - an NBFC-P2P platform that helps Indian lenders operate professionally with CIBIL score access, borrower management, and payment tracking.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      
+      
+
+
+      <title>Digital Sahukar | Professional P2P Lending Platform for Traditional Indian Lenders</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Transform your traditional lending business with Digital Sahukar - an NBFC-P2P platform that helps Indian lenders operate professionally with CIBIL score access, borrower management, and payment tracking.">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Font stylesheet -->
+
+      <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+      // render the settings object
+      //console.log('settings', [object Object]);
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '#FF6B35',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8', 
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '#004E89',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3', 
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3', 
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Poppins, sans-serif', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Roboto, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+                body: ['Roboto, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta name="google-site-verification" content="">
+      <meta name="baidu-verification" content="">
+      <meta name="yandex-verification" content="">
+      <meta name="bing-verification" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="Digital Sahukar - Modern Lending Platform for Indian Lenders">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+    
+      
+      <!-- Font Links -->
+     
+      <link rel="icon" type="image/x-icon" href="">
+
+      <style>
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Poppins, sans-serif, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Roboto, sans-serif, Inter, system-ui, sans-serif;
+        }
+      </style>
+      <style>
+        @media (min-width: 768px) {
+          #floating-button {
+            display: none;
+          }
+        }
+      </style>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <div id="RolloutPageContent"><element id="614ffe2a-0b12-4837-9c1d-d6da54e1cfe4" data-section-id="614ffe2a-0b12-4837-9c1d-d6da54e1cfe4">
+
+
+<div id="root">
+  <header id="header" class="bg-white shadow-md dark:bg-neutral-900">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+        <a href="#" class="text-2xl font-bold text-primary-600 dark:text-white">
+          <span class="text-[#FF6B35]">Digital</span><span class="text-[#004E89]">Sahukar</span>
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">Home</a>
+          <a href="#benefits" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">Benefits</a>
+          <a href="#features" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">Features</a>
+          <a href="#how-it-works" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">How It Works</a>
+          <a href="#faq" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">FAQ</a>
+          <a href="#contact" class="text-gray-700 hover:text-[#FF6B35] transition-colors duration-300 font-medium dark:text-gray-300 dark:hover:text-[#FFD166]">Contact</a>
+        <a href="#contact" class="bg-[#FF6B35] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium">Get Started</a>
+      </div>
+      
+      <!-- Mobile Navigation Button -->
+      <button aria-label="Open Menu" class="md:hidden text-gray-600 focus:outline-none dark:text-white" id="menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      
+      <!-- Mobile Navigation Menu -->
+      <div class="md:hidden fixed inset-0 bg-white dark:bg-neutral-900 z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b dark:border-neutral-800">
+          <a href="#" class="text-2xl font-bold">
+            <span class="text-[#FF6B35]">Digital</span><span class="text-[#004E89]">Sahukar</span>
+          </a>
+          <button aria-label="Close Menu" class="text-gray-600 focus:outline-none dark:text-white" id="close-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="p-4">
+          <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">Home</a>
+              </li>
+              <li>
+                <a href="#benefits" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">Benefits</a>
+              </li>
+              <li>
+                <a href="#features" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">Features</a>
+              </li>
+              <li>
+                <a href="#how-it-works" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">How It Works</a>
+              </li>              
+              <li>
+                <a href="#faq" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">FAQ</a>
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-700 hover:text-[#FF6B35] block py-2 dark:text-gray-300 dark:hover:text-[#FFD166]">Contact</a>
+              </li>
+            <li>
+              <a href="#contact" class="bg-[#FF6B35] text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300 font-medium block text-center mt-4">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+<script>
+  document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('translate-x-full');
+  });
+
+  document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('translate-x-full');
+  });
+</script>
+
+<!-- Floating Get Started Button for Mobile -->
+<a href="#contact" id="floating-button" class="fixed bottom-4 right-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg flex items-center justify-center z-50 hidden md:hidden">
+  <span>Get Started Today</span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+  </svg>
+</a>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const floatingButton = document.getElementById('floating-button');
+    const heroSection = document.getElementById('hero');
+    const contactSection = document.getElementById('contact');
+
+    function checkVisibility() {
+      const heroRect = heroSection.getBoundingClientRect();
+      const contactRect = contactSection.getBoundingClientRect();
+
+      if ((heroRect.top <= window.innerHeight && heroRect.bottom >= 0) || (contactRect.top <= window.innerHeight && contactRect.bottom >= 0)) {
+        floatingButton.classList.add('hidden');
+      } else {
+        floatingButton.classList.remove('hidden');
+      }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+  });
+</script>
+
+</element><element id="8a58bfa6-e994-4091-aea0-8415124ce73a" data-section-id="8a58bfa6-e994-4091-aea0-8415124ce73a">
+
+
+<div id="root">
+  <section id="hero" class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-neutral-900 dark:to-neutral-800 py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <!-- Hero Text Content -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+            Transform Your <span class="text-blue-600 dark:text-blue-400">Lending Business</span> with Digital Sahukar
+          </h1>
+          <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
+            Run your lending business professionally and legally through our NBFC-P2P platform. Perfect for traditional lenders looking to digitize operations across India.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg flex items-center justify-center">
+              <span>Get Started Today</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="https://wa.link/mtqbmr" class="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg flex items-center justify-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+              </svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+          <div class="mt-8 flex items-center justify-center lg:justify-start gap-2 text-gray-500 dark:text-gray-400">
+            <span class="text-sm">Regulated by</span>
+            <span class="bg-white dark:bg-neutral-700 px-3 py-1 rounded text-xs font-medium">RBI</span>
+            <span class="text-sm mx-2">•</span>
+            <span class="text-sm">NBFC-P2P Certified</span>
+          </div>
+        </div>
+        
+        <!-- Hero Image/Illustration -->
+        <div class="lg:w-1/2">
+          <div class="relative bg-white dark:bg-neutral-800 p-4 sm:p-8 rounded-2xl shadow-xl">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 dark:bg-neutral-700 p-4 rounded-lg">
+                <div class="flex items-center justify-center bg-blue-100 dark:bg-neutral-600 h-16 w-16 rounded-full mb-4 mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                </div>
+                <h3 class="text-center font-semibold text-gray-800 dark:text-white mb-2">CIBIL Score Access</h3>
+                <p class="text-sm text-center text-gray-600 dark:text-gray-300">Check borrower creditworthiness instantly</p>
+              </div>
+              <div class="bg-green-50 dark:bg-neutral-700 p-4 rounded-lg">
+                <div class="flex items-center justify-center bg-green-100 dark:bg-neutral-600 h-16 w-16 rounded-full mb-4 mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-center font-semibold text-gray-800 dark:text-white mb-2">Manual Disbursement</h3>
+                <p class="text-sm text-center text-gray-600 dark:text-gray-300">Control lending with personal decisions</p>
+              </div>
+              <div class="bg-purple-50 dark:bg-neutral-700 p-4 rounded-lg">
+                <div class="flex items-center justify-center bg-purple-100 dark:bg-neutral-600 h-16 w-16 rounded-full mb-4 mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 class="text-center font-semibold text-gray-800 dark:text-white mb-2">Payment Tracking</h3>
+                <p class="text-sm text-center text-gray-600 dark:text-gray-300">Monitor repayments with real-time updates</p>
+              </div>
+              <div class="bg-amber-50 dark:bg-neutral-700 p-4 rounded-lg">
+                <div class="flex items-center justify-center bg-amber-100 dark:bg-neutral-600 h-16 w-16 rounded-full mb-4 mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-600 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                  </svg>
+                </div>
+                <h3 class="text-center font-semibold text-gray-800 dark:text-white mb-2">Legal Compliance</h3>
+                <p class="text-sm text-center text-gray-600 dark:text-gray-300">Operate with full regulatory protection</p>
+              </div>
+            </div>
+            <div class="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rounded-full">New</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="052744ec-7d3e-4f26-86fb-66662b484a90" data-section-id="052744ec-7d3e-4f26-86fb-66662b484a90">
+
+
+<div id="root">
+  <section id="benefits" class="py-16 bg-gray-50 dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Why Choose Digital Sahukar?
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Join thousands of traditional lenders who have transformed their lending business with our platform
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Benefit 1 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600 dark:text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Legally Compliant
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Operate under RBI's P2P lending framework with full regulatory compliance. No need to worry about legal issues anymore.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 dark:text-green-400" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Increased Profitability
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Better risk assessment and digital efficiencies lead to higher returns and lower defaults on your lending portfolio.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600 dark:text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+              <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Credit Risk Assessment
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Access CIBIL scores and comprehensive credit reports to make informed lending decisions and reduce default risk.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-600 dark:text-amber-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Simplified Collections
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Automated reminders, payment tracking, and collection management system reduces recovery effort and improves cash flow.
+          </p>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 dark:text-red-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Maintain Personal Touch
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            Keep your personal lending approach intact while leveraging digital tools. Technology supports but doesn't replace your expertise.
+          </p>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-full mb-6 mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600 dark:text-indigo-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white text-center mb-3">
+            Digital Documentation
+          </h3>
+          <p class="text-gray-600 dark:text-gray-300 text-center">
+            E-KYC, digital agreements, and online verification eliminate paperwork hassles and improve record keeping.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="#contact" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl">
+          <span>Start Transforming Your Business</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="1bfc321d-de9a-4c45-8b3c-e64cad0c12dc" data-section-id="1bfc321d-de9a-4c45-8b3c-e64cad0c12dc">
+
+
+<div id="root">
+  <section id="features" class="py-16 bg-white dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-white">Features That Empower Lenders</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Transform your lending business with our comprehensive digital tools designed specifically for Indian lenders.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-blue-100 dark:bg-blue-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">CIBIL Score Access</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Instantly access credit scores and reports of potential borrowers to make informed lending decisions.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Comprehensive credit history</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Real-time CIBIL score fetching</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Risk assessment tools</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-green-100 dark:bg-green-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Manual Lending Control</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Maintain full control over your lending decisions while staying compliant with regulatory requirements.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Personalized lending terms</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>NBFC-P2P compliant framework</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Flexible disbursement options</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-purple-100 dark:bg-purple-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Payment Tracking</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Monitor all loan repayments in real-time with comprehensive tracking and reporting tools.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Automated payment reminders</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Detailed repayment analytics</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Instant payment notifications</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-amber-100 dark:bg-amber-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Legal Compliance</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Operate your lending business within the legal framework with all necessary documentation and compliance.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>RBI-compliant operations</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Automated legal documentation</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Digital KYC verification</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 5 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-red-100 dark:bg-red-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Business Analytics</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Gain valuable insights into your lending business performance with comprehensive analytics.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Portfolio performance tracking</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Risk analysis and reports</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Business growth metrics</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Feature 6 -->
+        <div class="bg-gray-50 dark:bg-neutral-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-neutral-700">
+          <div class="bg-indigo-100 dark:bg-indigo-900/30 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Customer Management</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Efficiently manage borrower relationships with professional tools designed for Indian lenders.</p>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Borrower profile management</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Communication tools</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Document management system</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <a href="#contact" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          Start Transforming Your Lending Business
+        </a>
+        <a href="https://wa.link/mtqbmr" class="inline-flex items-center ml-4 px-6 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="3cf52c94-f20f-4c72-90ad-3a1f98bc863a" data-section-id="3cf52c94-f20f-4c72-90ad-3a1f98bc863a">
+
+
+<div id="root">
+  <section id="how-it-works" class="py-16 bg-gray-50 dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">How Digital Sahukar Works</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">A simple step-by-step process that transforms traditional lending into a professional, legal, and efficient business.</p>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center justify-center mb-16">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-xl p-8 h-full">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold">1</div>
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-white ml-4">Register & Verify</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">Sign up as a lender on our platform and complete the verification process. We ensure you meet all regulatory requirements for NBFC-P2P lending.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Simple online registration</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Digital KYC verification</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">NBFC-P2P compliance setup</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-4 md:p-8 mt-8 md:mt-0">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-xl">
+              <div class="p-6 md:p-8">
+                <div class="flex flex-col space-y-4">
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 dark:text-white">Identity Verification</h4>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Completed</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 dark:text-white">Bank Account Linking</h4>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Completed</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                      <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-gray-800 dark:text-white">Business Verification</h4>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Approved</p>
+                    </div>
+                  </div>
+                  
+                  <div class="mt-6 pt-6 border-t border-gray-200 dark:border-neutral-700">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Verification Status</p>
+                        <p class="font-bold text-green-600 dark:text-green-400">Complete</p>
+                      </div>
+                      <span class="px-3 py-1 text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 rounded-full">Ready to Lend</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center justify-center mb-16">
+        <div class="w-full md:w-1/2 p-4 md:p-8 md:order-2">
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-xl p-8 h-full">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold">2</div>
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-white ml-4">Assess Borrowers</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">Use our platform to evaluate potential borrowers with comprehensive credit reports and CIBIL scores. Make informed lending decisions based on reliable data.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Instant CIBIL score access</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Detailed credit history reports</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Risk assessment tools</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-4 md:p-8 mt-8 md:mt-0 md:order-1">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-xl">
+              <div class="p-6 md:p-8">
+                <div class="flex justify-between items-center mb-6">
+                  <h4 class="text-lg font-bold text-gray-800 dark:text-white">Borrower Credit Report</h4>
+                  <span class="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 rounded-full">New Request</span>
+                </div>
+                
+                <div class="space-y-4">
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Borrower Name:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">Rajesh Kumar</span>
+                  </div>
+                  
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">CIBIL Score:</span>
+                    <span class="font-medium text-green-600 dark:text-green-400">780</span>
+                  </div>
+                  
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Loan History:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">3 Active, 2 Closed</span>
+                  </div>
+                  
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Payment History:</span>
+                    <span class="font-medium text-green-600 dark:text-green-400">Excellent</span>
+                  </div>
+                  
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Risk Category:</span>
+                    <span class="font-medium text-blue-600 dark:text-blue-400">Low Risk</span>
+                  </div>
+                </div>
+                
+                <div class="mt-8 space-y-3">
+                  <div class="w-full bg-gray-200 dark:bg-neutral-700 rounded-full h-2.5">
+                    <div class="bg-green-600 h-2.5 rounded-full" style="width: 78%"></div>
+                  </div>
+                  <div class="flex justify-between text-xs">
+                    <span class="text-gray-500 dark:text-gray-400">Poor</span>
+                    <span class="text-gray-500 dark:text-gray-400">Fair</span>
+                    <span class="text-gray-500 dark:text-gray-400">Good</span>
+                    <span class="font-medium text-green-600 dark:text-green-400">Very Good</span>
+                    <span class="text-gray-500 dark:text-gray-400">Excellent</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center justify-center mb-16">
+        <div class="w-full md:w-1/2 p-4 md:p-8">
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-xl p-8 h-full">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold">3</div>
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-white ml-4">Fund & Manage</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">Fund approved borrowers manually while our platform handles all documentation and legal requirements. Stay in control of your lending decisions.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Manual approval control</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Automated documentation</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Secure fund transfer</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-4 md:p-8 mt-8 md:mt-0">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-xl">
+              <div class="p-6 md:p-8">
+                <div class="flex justify-between items-center mb-6">
+                  <h4 class="text-lg font-bold text-gray-800 dark:text-white">Loan Management Dashboard</h4>
+                  <span class="px-3 py-1 text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 rounded-full">Active</span>
+                </div>
+                
+                <div class="mb-6">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-gray-500 dark:text-gray-400">Borrower:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">Priya Sharma</span>
+                  </div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-gray-500 dark:text-gray-400">Loan Amount:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">₹50,000</span>
+                  </div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-gray-500 dark:text-gray-400">Interest Rate:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">12% p.a.</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Term:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">6 months</span>
+                  </div>
+                </div>
+                
+                <div class="mb-6 pt-4 border-t border-gray-200 dark:border-neutral-700">
+                  <div class="flex justify-between mb-2">
+                    <span class="text-gray-500 dark:text-gray-400">Loan Status:</span>
+                    <span class="font-medium text-green-600 dark:text-green-400">Active - On Schedule</span>
+                  </div>
+                  <div class="flex justify-between mb-2">
+                    <span class="text-gray-500 dark:text-gray-400">EMI Amount:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">₹8,884 per month</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span class="text-gray-500 dark:text-gray-400">Next Payment:</span>
+                    <span class="font-medium text-gray-800 dark:text-white">15 May, 2023</span>
+                  </div>
+                </div>
+                
+                <div class="mt-6">
+                  <div class="flex flex-col space-y-2">
+                    <button class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-neutral-800">
+                      View Complete Details
+                    </button>
+                    <button class="w-full py-2 px-4 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-white font-medium rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-neutral-800">
+                      Download Agreement
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center justify-center">
+        <div class="w-full md:w-1/2 p-4 md:p-8 md:order-2">
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-xl p-8 h-full">
+            <div class="flex items-center mb-6">
+              <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold">4</div>
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-white ml-4">Track & Receive</h3>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">Monitor repayments in real-time and receive automated notifications. Our system ensures smooth collection while maintaining professional relationship with borrowers.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Automated payment tracking</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Timely repayment reminders</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">Direct deposit to your account</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 p-4 md:p-8 mt-8 md:mt-0 md:order-1">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white dark:bg-neutral-800 rounded-lg overflow-hidden shadow-xl">
+              <div class="p-6 md:p-8">
+                <div class="flex justify-between items-center mb-6">
+                  <h4 class="text-lg font-bold text-gray-800 dark:text-white">Payment Tracking</h4>
+                  <span class="px-3 py-1 text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 rounded-full">Live Updates</span>
+                </div>
+                
+                <div class="mb-6">
+                  <div class="mb-4">
+                    <div class="flex justify-between mb-1">
+                      <span class="text-sm text-gray-500 dark:text-gray-400">Loan Repayment Progress</span>
+                      <span class="text-sm font-medium text-gray-800 dark:text-white">66%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 dark:bg-neutral-700 rounded-full h-2.5">
+                      <div class="bg-green-600 h-2.5 rounded-full" style="width: 66%"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="grid grid-cols-3 gap-4 text-center mb-4">
+                    <div class="bg-gray-50 dark:bg-neutral-700 p-3 rounded-lg">
+                      <p class="text-xs text-gray-500 dark:text-gray-400">Total EMIs</p>
+                      <p class="text-lg font-bold text-gray-800 dark:text-white">12</p>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-neutral-700 p-3 rounded-lg">
+                      <p class="text-xs text-gray-500 dark:text-gray-400">Paid</p>
+                      <p class="text-lg font-bold text-green-600 dark:text-green-400">8</p>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-neutral-700 p-3 rounded-lg">
+                      <p class="text-xs text-gray-500 dark:text-gray-400">Remaining</p>
+                      <p class="text-lg font-bold text-blue-600 dark:text-blue-400">4</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                  <div class="flex items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                    <div class="mr-3">
+                      <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium text-gray-800 dark:text-white">Payment Received: ₹8,884</p>
+                      <p class="text-xs text-gray-500 dark:text-gray-400">15 April, 2023</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+                    <div class="mr-3">
+                      <svg class="w-6 h-6 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium text-gray-800 dark:text-white">Upcoming Payment: ₹8,884</p>
+                      <p class="text-xs text-gray-500 dark:text-gray-400">15 May, 2023 (12 days left)</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="text-center">
+                  <button class="w-full py-2 px-4 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-neutral-800">
+                    View Complete Payment History
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <a href="#contact" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-lg">
+          Start Modernizing Your Lending Business Today
+        </a>
+        <a href="https://wa.link/mtqbmr" class="inline-flex items-center ml-4 px-6 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-lg">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="fd910fc5-98e5-42f3-ba14-9c89c3af84d4" data-section-id="fd910fc5-98e5-42f3-ba14-9c89c3af84d4">
+
+
+<div id="root">
+  <section id="testimonials" class="py-16 bg-gray-50 dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">What Our Lenders Say</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Success stories from traditional lenders who transformed their business with Digital Sahukar.</p>
+      </div>
+
+      <div class="relative">
+        <div class="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-4" id="testimonial-container">
+          <!-- Testimonial 1 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold text-xl">
+                  RK
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Rajesh Kapoor</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Private Lender, Mumbai</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "For 15 years, I managed my lending business with paper records and constant worry about compliance. Digital Sahukar changed everything. Now I verify borrowers' credit scores instantly, maintain digital agreements, and track repayments automatically - all while staying fully compliant with RBI regulations."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Lending volume increased by 40%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 font-bold text-xl">
+                  SP
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Sunita Patel</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Family Business Lender, Gujarat</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "Our family has been in the lending business for generations. I was hesitant to adopt digital tools, fearing they would be too complicated. Digital Sahukar surprised me with its simplicity. Now we can check CIBIL scores of borrowers before lending, which has significantly reduced our defaults."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Default rate reduced by 60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 font-bold text-xl">
+                  VK
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Vijay Kumar</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Small Business Lender, Chennai</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "The payment tracking feature is a game-changer. Before Digital Sahukar, I spent hours each week chasing payments and updating records. Now everything is automated - I receive instant notifications when payments are made or due. This has saved me time and improved my relationship with borrowers."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Saves 15+ hours per week</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slideshow Dots -->
+        <div class="flex justify-center mt-4 space-x-2" id="testimonial-dots">
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const container = document.getElementById('testimonial-container');
+          const dots = document.getElementById('testimonial-dots').children;
+      
+          container.addEventListener('scroll', function() {
+            const scrollPosition = container.scrollLeft;
+            const containerWidth = container.scrollWidth - container.clientWidth;
+            const scrollPercentage = scrollPosition / containerWidth;
+      
+            for (let i = 0; i < dots.length; i++) {
+              dots[i].classList.remove('bg-gray-800');
+              dots[i].classList.add('bg-gray-300');
+            }
+      
+            if (scrollPercentage < 0.33) {
+              dots[0].classList.add('bg-gray-800');
+              dots[0].classList.remove('bg-gray-300');
+            } else if (scrollPercentage < 0.66) {
+              dots[1].classList.add('bg-gray-800');
+              dots[1].classList.remove('bg-gray-300');
+            } else {
+              dots[2].classList.add('bg-gray-800');
+              dots[2].classList.remove('bg-gray-300');
+            }
+          });
+        });
+      </script>
+      
+      <style>
+        @media (max-width: 768px) {
+          #testimonial-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+          }
+      
+          #testimonial-container > div {
+            scroll-snap-align: center;
+          }
+        }
+      
+        #testimonial-dots button.bg-gray-800 {
+          background-color: #4a5568;
+        }
+      </style>
+
+      <style>
+        @media (max-width: 768px) {
+          #testimonial-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+          }
+      
+          #testimonial-container > div {
+            scroll-snap-align: center;
+          }
+        }
+      
+        #testimonial-dots button.bg-gray-800 {
+          background-color: #4a5568;
+        }
+      </style>
+      
+      
+      
+      <!-- Stats Section -->
+      <div class="mt-16 bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 md:p-10">
+        <div class="text-center mb-10">
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">Our Impact on Traditional Lenders</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Results achieved by lenders across India using our platform</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400">₹120Cr+</div>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Loans facilitated</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400">65%</div>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Average reduction in defaults</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400">5,000+</div>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Lenders empowered</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-bold text-amber-600 dark:text-amber-400">12hrs</div>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Weekly time saved per lender</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 text-center">
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">Join thousands of traditional lenders who have transformed their business with Digital Sahukar</p>
+        <a href="#contact" class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-lg">
+          Start Your Digital Transformation
+        </a>
+        <a href="https://wa.link/mtqbmr" class="inline-flex items-center ml-4 px-6 py-4 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-lg">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="dfff1020-a873-4422-8037-4d89cfd8acea" data-section-id="dfff1020-a873-4422-8037-4d89cfd8acea">
+
+ 
+
+
+</element><element id="2f603c34-4bd6-4c58-a599-e95785dacb6e" data-section-id="2f603c34-4bd6-4c58-a599-e95785dacb6e">
+
+
+<div id="root">
+  <section id="faq" class="py-16 bg-white dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300">Everything you need to know about becoming a Digital Sahukar</p>
+        </div>
+        
+        <div class="space-y-6">
+          <!-- FAQ Item 1 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">What is a Digital Sahukar platform?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">Digital Sahukar is a platform that enables traditional lenders (Sahukars) from any part of India to run their lending business in a professional and legally compliant way through an NBFC-P2P (Non-Banking Financial Company-Peer to Peer) model. It digitizes the entire lending process while maintaining the personal relationships that traditional lending is known for.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 2 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">How can I check a borrower's CIBIL score?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">Our platform provides an easy-to-use interface where you can request and receive a borrower's CIBIL score with their consent. This helps you make informed lending decisions based on their credit history and repayment capacity. The entire process is digital, secure, and compliant with all regulatory requirements.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 3 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">Is this platform legal and RBI approved?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">Yes, our platform operates under the NBFC-P2P (Non-Banking Financial Company-Peer to Peer) license issued by the Reserve Bank of India (RBI). All transactions conducted through our platform adhere to RBI guidelines and regulations, making your lending business completely legal and compliant.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 4 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">How do I track borrower payments?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">Our platform includes a comprehensive tracking system that provides real-time updates on all your borrowers' repayments. You'll receive notifications for upcoming, completed, and missed payments. The dashboard gives you a complete overview of your lending portfolio, with detailed reports on each borrower's repayment history and current status.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 5 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">What are the fees and charges for using this platform?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">We charge a small percentage fee on successful disbursal of loans. There are no setup costs, monthly subscriptions, or hidden charges. Our fee structure is transparent and designed to ensure that we succeed only when you succeed. For detailed pricing information, please contact our team.</p>
+            </div>
+          </div>
+          
+          <!-- FAQ Item 6 -->
+          <div class="border border-gray-200 dark:border-neutral-700 rounded-lg overflow-hidden">
+            <button class="flex justify-between items-center w-full px-6 py-4 text-left bg-gray-50 dark:bg-neutral-800 hover:bg-gray-100 dark:hover:bg-neutral-700 transition-colors duration-200" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-gray-900 dark:text-white">How do I handle loan defaults or delayed payments?</span>
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="hidden px-6 py-4 bg-white dark:bg-neutral-900">
+              <p class="text-gray-700 dark:text-gray-300">Our platform includes built-in mechanisms for handling delayed or defaulted payments. These include automated reminders to borrowers, escalation procedures, and legal support when necessary. We also provide you with tools to restructure loans when appropriate. Our team is always available to guide you through the recovery process while maintaining regulatory compliance.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+          <p class="text-gray-600 dark:text-gray-300 mb-6">Still have questions? We're here to help!</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200">
+              Contact Us
+            </a>
+            <a href="https://wa.link/mtqbmr" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleFaq(button) {
+      // Toggle active state on the button
+      button.classList.toggle('bg-gray-100');
+      button.classList.toggle('bg-gray-50');
+      button.classList.toggle('dark:bg-neutral-700');
+      button.classList.toggle('dark:bg-neutral-800');
+      
+      // Toggle rotation of the chevron icon
+      const icon = button.querySelector('svg');
+      icon.classList.toggle('rotate-180');
+      
+      // Toggle visibility of the answer
+      const answer = button.nextElementSibling;
+      answer.classList.toggle('hidden');
+    }
+  </script>
+</div>
+
+</element><element id="b1c53878-e2bb-4db6-8259-03313cc80475" data-section-id="b1c53878-e2bb-4db6-8259-03313cc80475">
+
+
+<div id="root">
+  <section id="contact" class="py-16 bg-gray-50 dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get Started with Digital Sahukar Today</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Join thousands of lenders who are growing their business professionally and legally with our platform.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Contact Form -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-6 md:p-8">
+            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Contact Us</h3>
+            
+            <form id="contactForm" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Your full name" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-transparent bg-white dark:bg-neutral-700 text-gray-900 dark:text-white"
+                  required
+                >
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="Your phone number" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-transparent bg-white dark:bg-neutral-700 text-gray-900 dark:text-white"
+                  required
+                >
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Your email address" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-transparent bg-white dark:bg-neutral-700 text-gray-900 dark:text-white"
+                >
+              </div>
+              
+              <div>
+                <label for="city" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">City (Optional)</label>
+                <input 
+                  type="text" 
+                  id="city" 
+                  name="city" 
+                  placeholder="Your city" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-transparent bg-white dark:bg-neutral-700 text-gray-900 dark:text-white"
+                >
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message (Optional)</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="4" 
+                  placeholder="Any specific questions or requirements?" 
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-transparent bg-white dark:bg-neutral-700 text-gray-900 dark:text-white resize-none"
+                ></textarea>
+              </div>
+              
+              <div class="flex items-start">
+                <input 
+                  type="checkbox" 
+                  id="consent" 
+                  name="consent" 
+                  class="h-5 w-5 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded mt-1"
+                  required
+                >
+                <label for="consent" class="ml-2 block text-sm text-gray-700 dark:text-gray-300">
+                  I agree to receive communications about Digital Sahukar services.
+                </label>
+              </div>
+              
+              <button 
+                type="submit" 
+                class="w-full py-3 px-6 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition duration-200 font-medium text-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transform hover:scale-[1.02]"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Why Connect With Us?</h3>
+              
+              <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/30 p-3 rounded-full">
+                    <svg class="h-6 w-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium text-gray-900 dark:text-white">Free Consultation</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Get a personalized plan for your lending business transformation.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/30 p-3 rounded-full">
+                    <svg class="h-6 w-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium text-gray-900 dark:text-white">Legal Compliance</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Learn how we make your lending business 100% RBI compliant.</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start space-x-4">
+                  <div class="flex-shrink-0 bg-indigo-100 dark:bg-indigo-900/30 p-3 rounded-full">
+                    <svg class="h-6 w-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium text-gray-900 dark:text-white">Increased Profits</h4>
+                    <p class="text-gray-600 dark:text-gray-300">Discover how our platform can help you scale your lending business.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-xl">
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Need Immediate Assistance?</h4>
+              
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <svg class="h-6 w-6 text-indigo-600 dark:text-indigo-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                  <div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Phone</p>
+                    <p class="text-gray-900 dark:text-white">+91 9999234771</p>
+                    <p class="text-gray-900 mb-4 dark:text-white">Nikunj Maheshwari</p>
+                    <p class="text-gray-900 dark:text-white">+91 8750499244</p>
+                    <p class="text-gray-900 dark:text-white">Raja Sonkar</p>
+                  </div>
+                  
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <svg class="h-6 w-6 text-indigo-600 dark:text-indigo-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  <div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Email</p>
+                    <p class="text-gray-900 dark:text-white">nikunj@perannum.money</p>
+                  </div>
+                </div>
+                
+                <a 
+                  href="https://wa.link/mtqbmr" 
+                  class="flex items-center justify-center w-full py-3 px-6 bg-green-500 hover:bg-green-600 text-white rounded-lg transition duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 mt-4"
+                >
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+                  </svg>
+                  WhatsApp Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-16">
+          <p class="text-gray-500 dark:text-gray-400">
+            Don't miss this opportunity to transform your lending business. <br class="hidden md:block">
+            Connect with us today and start your journey towards a professional and legally compliant lending operation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include EmailJS library -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+     emailjs.init({
+       publicKey: "SQ3miC0PUgT4UzF0f",
+     });
+  })();
+</script>
+
+<script>
+  // Form validation and submission handling
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Collect form data
+    const formData = {
+      name: document.getElementById('name').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      city: document.getElementById('city').value,
+      message: document.getElementById('message').value
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_353z2l9', 'template_ztwarlm', formData)
+      .then(function(response) {
+        alert('Thank you for your interest! Our team will contact you shortly.');
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        alert('Failed to send the request. Please try again later.');
+        console.log('FAILED...', error);
+      });
+  });
+</script>
+</div>
+
+</element></div>
+      </main>
+
+      <!-- {bodyScripts} -->
+   </body>
+</html>
