@@ -220,6 +220,13 @@
           font-family: Roboto, sans-serif, Inter, system-ui, sans-serif;
         }
       </style>
+      <style>
+        @media (min-width: 768px) {
+          #floating-button {
+            display: none;
+          }
+        }
+      </style>
    </head>
    <body class="antialiased text-gray-800 min-h-screen flex flex-col">
       <!-- Skip to main content link for accessibility -->
@@ -301,6 +308,44 @@
     </nav>
   </header>
 </div>
+<script>
+  document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('translate-x-full');
+  });
+
+  document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('translate-x-full');
+  });
+</script>
+
+<!-- Floating Get Started Button for Mobile -->
+<a href="#contact" id="floating-button" class="fixed bottom-4 right-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 shadow-lg flex items-center justify-center z-50 hidden md:hidden">
+  <span>Get Started Today</span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+  </svg>
+</a>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const floatingButton = document.getElementById('floating-button');
+    const heroSection = document.getElementById('hero');
+    const contactSection = document.getElementById('contact');
+
+    function checkVisibility() {
+      const heroRect = heroSection.getBoundingClientRect();
+      const contactRect = contactSection.getBoundingClientRect();
+
+      if ((heroRect.top <= window.innerHeight && heroRect.bottom >= 0) || (contactRect.top <= window.innerHeight && contactRect.bottom >= 0)) {
+        floatingButton.classList.add('hidden');
+      } else {
+        floatingButton.classList.remove('hidden');
+      }
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('resize', checkVisibility);
+  });
+</script>
 
 </element><element id="8a58bfa6-e994-4091-aea0-8415124ce73a" data-section-id="8a58bfa6-e994-4091-aea0-8415124ce73a">
 
@@ -1126,145 +1171,159 @@
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">What Our Lenders Say</h2>
         <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Success stories from traditional lenders who transformed their business with Digital Sahukar.</p>
       </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-          <div class="p-8">
-            <div class="flex items-center mb-6">
-              <div class="h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold text-xl">
-                RK
+
+      <div class="relative">
+        <div class="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-4" id="testimonial-container">
+          <!-- Testimonial 1 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold text-xl">
+                  RK
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Rajesh Kapoor</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Private Lender, Mumbai</p>
+                </div>
               </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Rajesh Kapoor</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Private Lender, Mumbai</p>
-              </div>
-            </div>
-            <div class="mb-6">
-              <div class="flex text-yellow-400 mb-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "For 15 years, I managed my lending business with paper records and constant worry about compliance. Digital Sahukar changed everything. Now I verify borrowers' credit scores instantly, maintain digital agreements, and track repayments automatically - all while staying fully compliant with RBI regulations."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Lending volume increased by 40%</span>
+                </div>
               </div>
             </div>
-            <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
-              "For 15 years, I managed my lending business with paper records and constant worry about compliance. Digital Sahukar changed everything. Now I verify borrowers' credit scores instantly, maintain digital agreements, and track repayments automatically - all while staying fully compliant with RBI regulations."
-            </blockquote>
-            <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-              <div class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span>Lending volume increased by 40%</span>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 font-bold text-xl">
+                  SP
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Sunita Patel</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Family Business Lender, Gujarat</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "Our family has been in the lending business for generations. I was hesitant to adopt digital tools, fearing they would be too complicated. Digital Sahukar surprised me with its simplicity. Now we can check CIBIL scores of borrowers before lending, which has significantly reduced our defaults."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Default rate reduced by 60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 snap-center w-full md:w-auto flex-shrink-0">
+            <div class="p-8">
+              <div class="flex items-center mb-6">
+                <div class="h-12 w-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 font-bold text-xl">
+                  VK
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Vijay Kumar</h3>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Small Business Lender, Chennai</p>
+                </div>
+              </div>
+              <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
+                "The payment tracking feature is a game-changer. Before Digital Sahukar, I spent hours each week chasing payments and updating records. Now everything is automated - I receive instant notifications when payments are made or due. This has saved me time and improved my relationship with borrowers."
+              </blockquote>
+              <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                <div class="flex items-center">
+                  <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Saves 15+ hours per week</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Testimonial 2 -->
-        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-          <div class="p-8">
-            <div class="flex items-center mb-6">
-              <div class="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400 font-bold text-xl">
-                SP
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Sunita Patel</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Family Business Lender, Gujarat</p>
-              </div>
-            </div>
-            <div class="mb-6">
-              <div class="flex text-yellow-400 mb-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-              </div>
-            </div>
-            <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
-              "Our family has been in the lending business for generations. I was hesitant to adopt digital tools, fearing they would be too complicated. Digital Sahukar surprised me with its simplicity. Now we can check CIBIL scores of borrowers before lending, which has significantly reduced our defaults."
-            </blockquote>
-            <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-              <div class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span>Default rate reduced by 60%</span>
-              </div>
-            </div>
-          </div>
+        <!-- Slideshow Dots -->
+        <div class="flex justify-center mt-4 space-x-2" id="testimonial-dots">
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
+          <button class="w-3 h-3 bg-gray-300 rounded-full"></button>
         </div>
-        
-        <!-- Testimonial 3 -->
-        <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-          <div class="p-8">
-            <div class="flex items-center mb-6">
-              <div class="h-12 w-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 font-bold text-xl">
-                VK
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Vijay Kumar</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Small Business Lender, Chennai</p>
-              </div>
-            </div>
-            <div class="mb-6">
-              <div class="flex text-yellow-400 mb-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>
-              </div>
-            </div>
-            <blockquote class="text-gray-600 dark:text-gray-300 mb-6">
-              "The payment tracking feature is a game-changer. Before Digital Sahukar, I spent hours each week chasing payments and updating records. Now everything is automated - I receive instant notifications when payments are made or due. This has saved me time and improved my relationship with borrowers."
-            </blockquote>
-            <div class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-              <div class="flex items-center">
-                <svg class="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span>Saves 15+ hours per week</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
       </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const container = document.getElementById('testimonial-container');
+          const dots = document.getElementById('testimonial-dots').children;
+      
+          container.addEventListener('scroll', function() {
+            const scrollPosition = container.scrollLeft;
+            const containerWidth = container.scrollWidth - container.clientWidth;
+            const scrollPercentage = scrollPosition / containerWidth;
+      
+            for (let i = 0; i < dots.length; i++) {
+              dots[i].classList.remove('bg-gray-800');
+              dots[i].classList.add('bg-gray-300');
+            }
+      
+            if (scrollPercentage < 0.33) {
+              dots[0].classList.add('bg-gray-800');
+              dots[0].classList.remove('bg-gray-300');
+            } else if (scrollPercentage < 0.66) {
+              dots[1].classList.add('bg-gray-800');
+              dots[1].classList.remove('bg-gray-300');
+            } else {
+              dots[2].classList.add('bg-gray-800');
+              dots[2].classList.remove('bg-gray-300');
+            }
+          });
+        });
+      </script>
+      
+      <style>
+        @media (max-width: 768px) {
+          #testimonial-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+          }
+      
+          #testimonial-container > div {
+            scroll-snap-align: center;
+          }
+        }
+      
+        #testimonial-dots button.bg-gray-800 {
+          background-color: #4a5568;
+        }
+      </style>
+
+      <style>
+        @media (max-width: 768px) {
+          #testimonial-container {
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+          }
+      
+          #testimonial-container > div {
+            scroll-snap-align: center;
+          }
+        }
+      
+        #testimonial-dots button.bg-gray-800 {
+          background-color: #4a5568;
+        }
+      </style>
+      
+      
       
       <!-- Stats Section -->
       <div class="mt-16 bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 md:p-10">
@@ -1598,8 +1657,7 @@
                   <div>
                     <p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Phone</p>
                     <p class="text-gray-900 dark:text-white">+91 9999234771</p>
-                    <p class="text-gray-900 dark:text-white">Nikunj Maheshwari</p>
-                    <p>/n</p>
+                    <p class="text-gray-900 mb-4 dark:text-white">Nikunj Maheshwari</p>
                     <p class="text-gray-900 dark:text-white">+91 8750499244</p>
                     <p class="text-gray-900 dark:text-white">Raja Sonkar</p>
                   </div>
