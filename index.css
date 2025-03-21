@@ -1,0 +1,65 @@
+.hero-preview {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.hero-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.hero-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #0056b3;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
