@@ -1540,6 +1540,9 @@
     // Form validation and submission handling
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
+     const submitBtn = this.querySelector('button[type="submit"]');
+     submitBtn.disabled = true;
+     submitBtn.textContent = 'Submitting...';
       
       // Collect form data
       const formData = {
@@ -1555,9 +1558,13 @@
         .then(function(response) {
           alert('Thank you for your interest! Our team will contact you shortly.');
           document.getElementById('contactForm').reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Request';
         }, function(error) {
           alert('Failed to send the request. Please try again later.');
           console.log('FAILED...', error);
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Request';
         });
     });
   </script>
